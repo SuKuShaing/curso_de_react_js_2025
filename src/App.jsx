@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import ToggleButton from './components/ToggleButton'
 import NameForm from './components/NameForm'
 import CounterWithEffect from './components/CounterWithEffect'
+import Button from './components/Button/Button'
 
 function App() {
   const items = ["React", "Vite", "TypeScript"];
@@ -14,6 +15,8 @@ function App() {
   return (
     <>
       <h1>Hola Mundo React</h1>
+      <Button>Gris</Button>
+      <Button blue>Azul</Button>
       <CounterWithEffect />
       <NameForm />
       <ToggleButton />
