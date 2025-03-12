@@ -8,13 +8,15 @@ import ToggleButton from './components/ToggleButton'
 import NameForm from './components/NameForm'
 import CounterWithEffect from './components/CounterWithEffect'
 import Button from './components/Button/Button'
+import Text from './components/Text/Text'
 
 function App() {
   const items = ["React", "Vite", "TypeScript"];
 
   return (
     <>
-      <h1>Hola Mundo React</h1>
+      <h1 className='text-3xl font-bold underline'>Hola Mundo React</h1>
+      <Text />
       <Button>Gris</Button>
       <Button blue>Azul</Button>
       <CounterWithEffect />
