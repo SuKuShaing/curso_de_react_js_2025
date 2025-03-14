@@ -10,8 +10,9 @@ const NameForm = () => {
                 placeholder='Escribe tu nombre'
                 value={name}
                 onChange={(event) => setName(event.target.value)}
+                className='border border-gray-300 p-2 rounded-lg m-2'
             />
-            <p>Hola, {name || "Visitante"}</p>
+            <p className='m-2'>Hola, {name || "Visitante"}</p>
         </div>
     );
 };

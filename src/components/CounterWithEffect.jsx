@@ -9,9 +9,11 @@ const CounterWithEffect = () => {
 
     return (
         <div>
-            <h1>Counter With Effect</h1>
-            <p>{count}</p>
-            <button onClick={() => setCount(count + 1)}>Incrementar</button>
+            <p className="m-4">{count}</p>
+            <button 
+                className="py-2 px-4 bg-blue-500 text-white rounded" 
+                onClick={() => setCount(count + 1)}
+            >Incrementar</button>
         </div>
     );
 };
