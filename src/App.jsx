@@ -11,6 +11,7 @@ import Button from './components/Button/Button'
 import Text from './components/Text/Text'
 import StaticComponent from './components/StaticComponent/StaticComponent'
 import UserList from './components/UserList/UserList'
+import UserListWhitLoading from './components/UserListWhitLoading/UserListWhitLoading'
 
 function App() {
   const items = ["React", "Vite", "TypeScript"];
@@ -18,6 +19,9 @@ function App() {
   return (
     <>
       <h1 className='text-3xl font-bold underline'>Curso de React</h1>
+      <hr className='my-4 text-gray-300' />
+      <h2 className='text-2xl font-bold mb-3 mt-8 mx-2'>Lista de Usuarios con loading</h2>
+      <UserListWhitLoading />
       <hr className='my-4 text-gray-300' />
       <h2 className='text-2xl font-bold mb-3 mt-8 mx-2'>User list, componente dinámico</h2>
       <UserList />
