@@ -12,13 +12,17 @@ import Text from './components/Text/Text'
 import StaticComponent from './components/StaticComponent/StaticComponent'
 import UserList from './components/UserList/UserList'
 import UserListWhitLoading from './components/UserListWhitLoading/UserListWhitLoading'
+import SearchPosts from './components/SearchPosts/SearchPosts'
 
 function App() {
   const items = ["React", "Vite", "TypeScript"];
 
   return (
     <>
-      <h1 className='text-3xl font-bold underline'>Curso de React</h1>
+      <h1 className='text-4xl font-bold underline text-center m-5'>Curso de React</h1>
+      <hr className='my-4 text-gray-300' />
+      <h2 className='text-2xl font-bold mb-3 mt-8 mx-2'>Búsqueda de algo</h2>
+      <SearchPosts />
       <hr className='my-4 text-gray-300' />
       <h2 className='text-2xl font-bold mb-3 mt-8 mx-2'>Lista de Usuarios con loading</h2>
       <UserListWhitLoading />
