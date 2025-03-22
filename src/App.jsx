@@ -13,6 +13,7 @@ import UserListWhitLoading from "./components/UserListWhitLoading/UserListWhitLo
 import SearchPosts from "./components/SearchPosts/SearchPosts";
 import Contador from "./components/Contador/Contador";
 import CounterWhitCustomHook from "./components/CounterWhitCustomHook/CounterWhitCustomHook";
+import CounterWithReactMemo from "./components/CounterWithReactMemo/CounterWithReactMemo";
 
 const ThemeContext = createContext();
 
@@ -58,6 +59,9 @@ function App() {
 			<h1 className="text-4xl font-bold underline text-center m-5">
 				Curso de React
 			</h1>
+			<hr className="my-4 text-gray-300" />
+			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Counter con React Memo</h2>
+			<CounterWithReactMemo />
 			<hr className="my-4 text-gray-300" />
 			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Counter con Custom Hook</h2>
 			<CounterWhitCustomHook />
