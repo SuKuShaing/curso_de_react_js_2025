@@ -12,6 +12,7 @@ import UserList from "./components/UserList/UserList";
 import UserListWhitLoading from "./components/UserListWhitLoading/UserListWhitLoading";
 import SearchPosts from "./components/SearchPosts/SearchPosts";
 import Contador from "./components/Contador/Contador";
+import CounterWhitCustomHook from "./components/CounterWhitCustomHook/CounterWhitCustomHook";
 
 const ThemeContext = createContext();
 
@@ -57,6 +58,9 @@ function App() {
 			<h1 className="text-4xl font-bold underline text-center m-5">
 				Curso de React
 			</h1>
+			<hr className="my-4 text-gray-300" />
+			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Counter con Custom Hook</h2>
+			<CounterWhitCustomHook />
 			<hr className="my-4 text-gray-300" />
 			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Btn para cambiar theme</h2>
 			<ThemeButton />
