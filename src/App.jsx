@@ -15,6 +15,7 @@ import Contador from "./components/Contador/Contador";
 import CounterWhitCustomHook from "./components/CounterWhitCustomHook/CounterWhitCustomHook";
 import CounterWithReactMemo from "./components/CounterWithReactMemo/CounterWithReactMemo";
 import ButtonTs from "./components/ButtonTs";
+import CounterTs from "./components/CounterTs";
 
 const ThemeContext = createContext();
 
@@ -52,6 +53,15 @@ function ThemeButton() {
 	)
 };
 
+// se debe tipar sí el archivo fuera .tsx
+// function greet(name: string): string {
+// 	return `Hola ${name}`;
+// };
+
+function greet(nombre) {
+	return `Hola ${nombre}`;
+};
+
 function App() {
 	const items = ["React", "Vite", "TypeScript"];
 
@@ -59,11 +69,16 @@ function App() {
 		alert("Hola desde el botón typescript");
 	};
 
+	console.log(greet("Mundo"));
+
 	return (
 		<ThemeProvider>
 			<h1 className="text-4xl font-bold underline text-center m-5">
 				Curso de React
 			</h1>
+			<hr className="my-4 text-gray-300" />
+			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Counter con TypeScript</h2>
+			<CounterTs />
 			<hr className="my-4 text-gray-300" />
 			<h2 className="text-2xl font-bold mb-3 mt-8 mx-2">Botón con TypeScript</h2>
 			<ButtonTs onclick={megaFuncion} label={"Click me"} />
