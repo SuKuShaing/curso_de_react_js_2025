@@ -14,6 +14,7 @@ const reducer = (estado, accion) => {
 };
 
 const Contador = () => {
+	// const [estado, dispatch] = useReducer(Esta_es_la_fc, Este_Es_el_estado_inicial);
 	const [estado, dispatch] = useReducer(reducer, { count: 0 });
 
 	return (
